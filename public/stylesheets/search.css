@@ -1,0 +1,149 @@
+﻿/* required for responsive designe */
+/* LESS - http://lesscss.org style sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=7342u1k006S0Qvr0diM9L0hmL1Pk++pP0GlB0GlB++00HE45kS7pvov4pov4pez++ez++k++nG00nG00nGD27+D27+ */
+/* Feel free to copy&paste color codes to your application */
+/* MIXINS */
+/* Custom colors added */
+/* As hex codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* As RGBa codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+.search-result-content {
+  max-width: 50em;
+  padding: 10px;
+  padding-left: 90px;
+}
+@media (max-width: 768px) {
+  .search-result-content {
+    padding-left: 10px;
+    width: 100%;
+    display: block;
+  }
+}
+.outer-result-box {
+  padding-bottom: 10px;
+}
+.inner-result-box {
+  display: flex;
+  padding: 10px;
+}
+.inner-result-box:hover {
+  background: #f7f7f7;
+}
+.prev-image-box {
+  -ms-flex: 30%;
+  /* IE 10 */
+  flex: 30%;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.prev-image-box img {
+  width: 150px;
+  height: 150px;
+}
+.result-info-box {
+  -ms-flex: 70%;
+  /* IE 10 */
+  flex: 70%;
+  padding: 10px;
+}
+.result-info-title a {
+  color: #ce3d00;
+}
+.result-info-text {
+  padding-bottom: 10px;
+}
+input.style {
+  margin-bottom: 0;
+}
+.result-info-link a:hover {
+  color: #656666;
+}
+.result-info-link .result-prev-link {
+  color: #656666;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.search-autocomplete {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.acp-wrap {
+  display: block;
+  padding-top: 5px;
+  padding-left: 7px;
+  max-height: 205px;
+  overflow: auto;
+  overflow-x: hidden;
+  position: static;
+}
+.acp {
+  padding: 6px;
+  color: #a6aaa9;
+}
+.acp:hover {
+  background-color: #f7f7f7;
+  color: #656666;
+  cursor: pointer;
+}
+.outer-gallery-box {
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
+}
+.inner-gallery-box {
+  float: left;
+  display: block;
+  line-height: 15;
+  text-align: center;
+  vertical-align: middle;
+}
+.grid-img-box {
+  display: inline-block;
+  width: 250px;
+  height: 220px;
+  padding: 2px;
+}
+.grid-img-box:hover {
+  background-color: #f2f2f2;
+}
+.img-prev-style {
+  max-width: 100%;
+  max-height: 100%;
+}
+.video-box {
+  text-align: center;
+}
+.outer-video-box {
+  display: inline-block;
+  width: 250px;
+  height: 220px;
+  padding: 3px;
+}
+.outer-video-box:hover {
+  background-color: #f2f2f2;
+}
+.outer-video-box img {
+  width: 100%;
+}
+/*# sourceMappingURL=search.css.map */

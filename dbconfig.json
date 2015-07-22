@@ -1,0 +1,13 @@
+﻿{
+    "MONGOLAB_URI": "",
+    "MONGOLAB_PORT": "",
+    "MONGOLAB_DB": "vecrawl",
+    "MONGOLAB_USERNAME": "admin",
+    "MONGOLAB_PASSWORD": "KgCbPUvGAR9y",
+
+    "MONGOLAB_URI_LOCAL": "localhost",
+    "MONGOLAB_PORT_LOCAL": "27017",
+    "MONGOLAB_DB_LOCAL": "test",
+    "MONGOLAB_USERNAME_LOCAL": "xpitfire",
+    "MONGOLAB_PASSWORD_LOCAL": "password"
+}

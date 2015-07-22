@@ -1,0 +1,3 @@
+﻿var body = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  return "<script src=\"http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js\"></script>\r\n<script src=\"http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js\"></script>\r\n<script src=\"/assets/js/bootstrap.min.js\"></script>\r\n<script src=\"/assets/js/bootstrap-image-gallery.min.js\"></script>\r\n<script src=\"/assets/js/transition.js\"></script>\r\n<script src=\"/assets/js/collapse.js\"></script>\r\n<script src=\"/assets/js/affix.js\"></script>\r\n\r\n<script src=\"/javascripts/video.min.js\"></script>\r\n<script src=\"/javascripts/app.js\"></script>";
+  },"useData":true});

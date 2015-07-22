@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{> page/title}}</title>
+    {{> page/head}}
+</head>
+<body class="dark-theme">
+    <div class="page-background"></div>
+    {{{body}}}
+
+    <div class="scroll-top-wrapper">
+        <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+        </span>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer">
+            {{> page/footer}}
+        </div>
+        <div class="clearfix visible-xs-block"></div>
+        <p>&copy; {{copyright}}</p>
+    </footer>
+    {{> page/body}}
+</body>
+</html>

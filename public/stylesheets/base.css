@@ -1,0 +1,71 @@
+﻿/* required for responsive designe */
+/* LESS - http://lesscss.org style sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=7342u1k006S0Qvr0diM9L0hmL1Pk++pP0GlB0GlB++00HE45kS7pvov4pov4pez++ez++k++nG00nG00nGD27+D27+ */
+/* Feel free to copy&paste color codes to your application */
+/* MIXINS */
+/* Custom colors added */
+/* As hex codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* As RGBa codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+.section-content {
+  padding-top: 60px;
+}
+.section-content .content-container {
+  display: block;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  vertical-align: middle;
+  table-layout: fixed;
+}
+.section-content .box {
+  width: 100%;
+  height: 100%;
+  display: table;
+  vertical-align: middle;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  table-layout: fixed;
+}
+.section-content .box .box-inner {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.section-content .box .content-horiz-two-align {
+  display: table-cell;
+  vertical-align: middle;
+  max-width: 750px;
+}
+@media (max-width: 768px) {
+  .section-content .box .content-horiz-two-align {
+    float: left;
+  }
+}
+@media (max-width: 768px) {
+  .section-content {
+    padding-top: 140px;
+  }
+}
+@media (max-width: 768px) {
+  .scale-image {
+    min-width: 200px;
+    width: 100%;
+  }
+}
+.form-group.required .control-label:after {
+  color: #d00;
+  content: "*";
+  margin-left: 2px;
+  top: 7px;
+}
+/*# sourceMappingURL=base.css.map */

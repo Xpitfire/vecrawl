@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>VeCrawl</Name>
+    <RootNamespace>ExpressApp1</RootNamespace>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
+    <NameOfLastUsedPublishProfile>vecrawl</NameOfLastUsedPublishProfile>
+    <NodeExePath>C:\Program Files\nodejs\node.exe</NodeExePath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7f1c07ec-9a04-458e-b455-619c47c46539</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="config\auth.js" />
+    <Compile Include="config\passport.js" />
+    <Compile Include="model\user.js" />
+    <Compile Include="public\assets\js\affix.js" />
+    <Compile Include="public\assets\js\alert.js" />
+    <Compile Include="public\assets\js\bootstrap-image-gallery.js" />
+    <Compile Include="public\assets\js\bootstrap-image-gallery.min.js" />
+    <Compile Include="public\assets\js\bootstrap.js" />
+    <Compile Include="public\assets\js\bootstrap.min.js" />
+    <Compile Include="public\assets\js\button.js" />
+    <Compile Include="public\assets\js\carousel.js" />
+    <Compile Include="public\assets\js\collapse.js" />
+    <Compile Include="public\assets\js\dropdown.js" />
+    <Compile Include="public\assets\js\html5shiv-printshiv.js" />
+    <Compile Include="public\assets\js\html5shiv-printshiv.min.js" />
+    <Compile Include="public\assets\js\html5shiv.js" />
+    <Compile Include="public\assets\js\html5shiv.min.js" />
+    <Compile Include="public\assets\js\jquery.blueimp-gallery.min.js" />
+    <Compile Include="public\assets\js\mediaelement-and-player.js" />
+    <Compile Include="public\assets\js\mediaelement-and-player.min.js" />
+    <Compile Include="public\assets\js\mediaelementplayer.min.js" />
+    <Compile Include="public\assets\js\modal.js" />
+    <Compile Include="public\assets\js\modernizr.js" />
+    <Compile Include="public\assets\js\modernizr.min.js" />
+    <Compile Include="public\assets\js\popover.js" />
+    <Compile Include="public\assets\js\scrollspy.js" />
+    <Compile Include="public\assets\js\tab.js" />
+    <Compile Include="public\assets\js\tooltip.js" />
+    <Compile Include="public\assets\js\transition.js" />
+    <Compile Include="public\assets\js\kenburns.js" />
+    <Compile Include="public\javascripts\effects.js" />
+    <Compile Include="public\javascripts\app.js" />
+    <Compile Include="model\vecrawl.js" />
+    <Compile Include="public\javascripts\video.js" />
+    <Compile Include="public\javascripts\video.min.js" />
+    <Compile Include="routes\api.js" />
+    <Compile Include="routes\auth.js" />
+    <Compile Include="routes\error.js" />
+    <Compile Include="routes\default.js" />
+    <Compile Include="server.js" />
+    <Compile Include="public\assets\js\angular.min.js" />
+    <Compile Include="public\assets\js\jquery-2.1.3.js" />
+    <Compile Include="public\assets\js\jquery-2.1.3.min.js" />
+    <Compile Include="views\about.hbs.js" />
+    <Compile Include="views\connect-local.hbs.js" />
+    <Compile Include="views\contact.hbs.js" />
+    <Compile Include="views\error.hbs.js" />
+    <Compile Include="views\index.hbs.js" />
+    <Compile Include="views\layouts\startpage.hbs.js" />
+    <Compile Include="views\layouts\main.hbs.js" />
+    <Compile Include="views\login.hbs.js" />
+    <Compile Include="views\mail.hbs.js" />
+    <Compile Include="views\partials\page\body.hbs.js" />
+    <Compile Include="views\partials\page\footer.hbs.js" />
+    <Compile Include="views\partials\page\head.hbs.js" />
+    <Compile Include="views\partials\page\nav.hbs.js" />
+    <Compile Include="views\partials\page\searchfield.hbs.js" />
+    <Compile Include="views\partials\page\title.hbs.js" />
+    <Compile Include="views\profile.hbs.js" />
+    <Compile Include="views\search.hbs.js" />
+    <Compile Include="views\settings.hbs.js" />
+    <Compile Include="views\auth.hbs.js" />
+    <Compile Include="views\signup.hbs.js" />
+    <Compile Include="views\support.hbs.js" />
+    <Content Include="dbconfig.json" />
+    <Content Include="public\assets\css\blueimp-gallery.min.css" />
+    <Content Include="public\assets\css\bootstrap-image-gallery.css" />
+    <Content Include="public\assets\css\bootstrap-image-gallery.min.css" />
+    <Content Include="public\assets\css\bootstrap-responsive.css" />
+    <Content Include="public\assets\css\bootstrap-responsive.min.css" />
+    <Content Include="public\assets\css\bootstrap-theme.css" />
+    <Content Include="public\assets\css\bootstrap-theme.css.map" />
+    <Content Include="public\assets\css\bootstrap-theme.min.css" />
+    <Content Include="public\assets\css\bootstrap.css" />
+    <Content Include="public\assets\css\bootstrap.css.map" />
+    <Content Include="public\assets\css\bootstrap.min.css" />
+    <Content Include="public\assets\css\font-awesome.css" />
+    <Content Include="public\assets\css\font-awesome.min.css" />
+    <Content Include="public\assets\css\kenburns.min.css" />
+    <Content Include="public\assets\css\mediaelementplayer.css" />
+    <Content Include="public\assets\css\mediaelementplayer.min.css" />
+    <Content Include="public\assets\css\normalize.min.css" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\assets\fonts\FontAwesome.otf" />
+    <Content Include="public\assets\img\background.png" />
+    <Content Include="public\assets\img\bigplay.fw.png" />
+    <Content Include="public\assets\img\bigplay.png" />
+    <Content Include="public\assets\img\bigplay.svg" />
+    <Content Include="public\assets\img\controls-ted.png" />
+    <Content Include="public\assets\img\controls-wmp-bg.png" />
+    <Content Include="public\assets\img\controls-wmp.png" />
+    <Content Include="public\assets\img\controls.fw.png" />
+    <Content Include="public\assets\img\controls.png" />
+    <Content Include="public\assets\img\controls.svg" />
+    <Content Include="public\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="public\assets\img\glyphicons-halflings.png" />
+    <Content Include="public\assets\img\loading.gif" />
+    <Content Include="public\assets\img\silverlightmediaelement.xap" />
+    <Content Include="public\assets\img\skipback.png" />
+    <Content Include="public\assets\js\.jscs.json" />
+    <Content Include="public\assets\js\.jshintrc" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="package.json" />
+    <Content Include="public\images\avatar-dummy-big.png" />
+    <Content Include="public\images\avatar-dummy.png" />
+    <Content Include="public\images\bg.jpg" />
+    <Content Include="public\images\bg2.jpg" />
+    <Content Include="public\images\btn_sprite.png" />
+    <Content Include="public\images\image0.jpg" />
+    <Content Include="public\images\image1.jpg" />
+    <Content Include="public\images\image2.jpg" />
+    <Content Include="public\images\image3.jpg" />
+    <Content Include="public\images\image4.jpg" />
+    <Content Include="public\assets\js\jquery-2.1.3.min.map" />
+    <Content Include="model\vecrawl.js.map" />
+    <Content Include="public\images\media-placeholder.png" />
+    <Content Include="public\images\music-placeholder.png" />
+    <Content Include="public\images\pic-placeholder.png" />
+    <Content Include="public\images\section_image0.jpg" />
+    <Content Include="public\images\section_image1.jpg" />
+    <Content Include="public\images\smiley.png" />
+    <Content Include="public\images\VeCrawlLogo.jpg" />
+    <Content Include="public\images\VeCrawlLogo_notxt.jpg" />
+    <Content Include="public\images\VeCrawlLogo_notxt_small.jpg" />
+    <Content Include="public\images\VeCrawlLogo_notxt_small.png" />
+    <Content Include="public\images\video-placeholder.png" />
+    <Content Include="public\stylesheets\base.css" />
+    <Content Include="public\stylesheets\base.css.map" />
+    <Content Include="public\stylesheets\base.less" />
+    <Content Include="public\stylesheets\base.min.css" />
+    <Content Include="public\stylesheets\colorscheme.min.css" />
+    <Content Include="public\stylesheets\consts.css" />
+    <Content Include="public\stylesheets\consts.css.map" />
+    <Content Include="public\stylesheets\consts.less" />
+    <Content Include="public\stylesheets\colorscheme.css" />
+    <Content Include="public\stylesheets\colorscheme.css.map" />
+    <Content Include="public\stylesheets\colorscheme.less" />
+    <Content Include="public\stylesheets\consts.min.css" />
+    <Content Include="public\stylesheets\error.css" />
+    <Content Include="public\stylesheets\error.css.map" />
+    <Content Include="public\stylesheets\error.less" />
+    <Content Include="public\stylesheets\index.css" />
+    <Content Include="public\stylesheets\index.css.map" />
+    <Content Include="public\stylesheets\index.less" />
+    <Content Include="public\stylesheets\index.min.css" />
+    <Content Include="public\assets\css\kenburns.css" />
+    <Content Include="public\assets\css\normalize.css" />
+    <Content Include="public\stylesheets\profile.css" />
+    <Content Include="public\stylesheets\profile.css.map" />
+    <Content Include="public\stylesheets\profile.less" />
+    <Content Include="public\stylesheets\profile.min.css" />
+    <Content Include="public\stylesheets\search.css" />
+    <Content Include="public\stylesheets\search.css.map" />
+    <Content Include="public\stylesheets\search.less" />
+    <Content Include="public\stylesheets\search.min.css" />
+    <Content Include="public\stylesheets\signin.css" />
+    <Content Include="public\stylesheets\signin.css.map" />
+    <Content Include="public\stylesheets\signin.less" />
+    <Content Include="public\stylesheets\signin.min.css" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\stylesheets\style.css.map" />
+    <Content Include="public\stylesheets\style.less" />
+    <Content Include="public\stylesheets\style.min.css" />
+    <Content Include="README.md" />
+    <None Include="vecrawl.pubxml" />
+    <Content Include="views\about.handlebars" />
+    <Content Include="views\connect-local.handlebars" />
+    <Content Include="views\contact.handlebars" />
+    <Content Include="views\error.handlebars" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="public\assets\css\" />
+    <Folder Include="public\assets\img\" />
+    <Folder Include="public\assets\js\" />
+    <Folder Include="public\assets\fonts\" />
+    <Folder Include="public\assets\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="model\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\cookie-parser\" />
+    <Folder Include="typings\express\" />
+    <Folder Include="typings\morgan\" />
+    <Folder Include="typings\node\" />
+    <Folder Include="views\" />
+    <Folder Include="views\layouts\" />
+    <Folder Include="views\partials\" />
+    <Folder Include="views\partials\page\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\index.handlebars" />
+    <Content Include="views\layouts\main.handlebars" />
+    <Content Include="views\layouts\startpage.handlebars" />
+    <Content Include="views\login.handlebars" />
+    <Content Include="views\mail.handlebars" />
+    <Content Include="views\partials\page\body.handlebars" />
+    <Content Include="views\partials\page\footer.handlebars" />
+    <Content Include="views\partials\page\head.handlebars" />
+    <Content Include="views\partials\page\nav.handlebars" />
+    <Content Include="views\partials\page\searchfield.handlebars" />
+    <Content Include="views\partials\page\title.handlebars" />
+    <Content Include="views\profile.handlebars" />
+    <Content Include="views\search.handlebars" />
+    <Content Include="views\settings.handlebars" />
+    <Content Include="views\auth.handlebars" />
+    <Content Include="views\signup.handlebars" />
+    <Content Include="views\support.handlebars" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="model\vecrawl.ts" />
+    <TypeScriptCompile Include="typings\cookie-parser\cookie-parser.d.ts" />
+    <TypeScriptCompile Include="typings\express\express.d.ts" />
+    <TypeScriptCompile Include="typings\morgan\morgan.d.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

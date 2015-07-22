@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{> page/title}}</title>
+    {{> page/head}}
+</head>
+<body>
+    <div class="wrap">
+        {{> page/nav}}
+
+        <div id="video-player-box"></div>
+        <div id="close-video-box" class="own-hover-glyphicon clear-search-text">X</div>
+
+        <section class="section-content">
+            <div id="main-content-wrapper" class="content-wrapper">
+                {{{body}}}
+            </div>
+        </section>
+
+        <div class="scroll-top-wrapper">
+            <span class="scroll-top-inner">
+                <i class="fa fa-2x fa-arrow-circle-up"></i>
+            </span>
+        </div>
+
+        <footer class="footer-container">
+            <div class="footer">
+                {{> page/footer}}
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <p>&copy; {{copyright}}</p>
+        </footer>
+    </div>
+    {{> page/body}}
+</body>
+</html>

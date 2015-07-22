@@ -1,0 +1,82 @@
+<nav class="navbar navbar-inverse navbar-fixed-top sticky">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" title="{{> page/title}} Home"><img width="35" src="/images/VeCrawlLogo_notxt_small.jpg" alt="{{> page/title}} Logo" /></a>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            {{> page/searchfield}}
+            <button type="button" id="menu-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse" id="bs-example-navbar-collapse-1">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active">
+                        <a id="filter-web" class="highlight-dropdown" href="#">Web</a>
+                    </li>
+                    <li>
+                        <a id="filter-img" href="#">Image</a>
+                    </li>
+                    <li>
+                        <a id="filter-video" href="#">Video</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    {{#if user}}
+                    <li id="nav-login-menu" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/settings">Settings</a></li>
+                            <li><a href="/profile">Profile</a></li>
+                        </ul>
+                    </li>
+                    {{/if}}
+
+                    {{#if user}}
+                    <li role="presentation" class="divider"></li>
+                    <li id="nav-welcome-text">
+                        <p class="navbar-text">
+                            {{#if user.local.name}}
+                            <strong>Hi, </strong>{{user.local.name}}
+                            {{else}}
+                            {{#if user.facebook.name}}
+                            <strong>Hi, </strong>{{user.facebook.name}}
+                            {{else}}
+                            {{#if user.twitter.displayName}}
+                            <strong>Hi, </strong>{{user.twitter.displayName}}
+                            {{else}}
+                            {{#if user.google.name}}
+                            <strong>Hi, </strong>{{user.google.name}}
+                            {{else}}
+                            <strong>Welcome</strong>
+                            {{/if}}
+                            {{/if}}
+                            {{/if}}
+                            {{/if}}
+
+                            {{#if user.local.avatar}}
+                            <img src="{{user.local.avatar}}" width="20" height="20">
+                            {{else}}
+                            <img src="/images/avatar-dummy.png" width="20" height="20">
+                            {{/if}}
+                        </p>
+                    </li>
+                    <li>
+                        <a href="/logout">Log Out</a>
+                    </li>
+                    {{else}}
+                    <li role="presentation" class="divider"></li>
+                    <li class="dropdown">
+                        <a href="/auth">Sign In</a>
+                    </li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

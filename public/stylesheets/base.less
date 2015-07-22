@@ -1,0 +1,69 @@
+﻿@import "consts";
+@import "colorscheme";
+
+//--- horizontal align of two divs content
+//--- section style
+.section-content {
+
+    padding-top: 60px;
+        
+    .content-container {
+        display: block;
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+        vertical-align: middle;
+        table-layout: fixed;
+    }
+
+    .box {
+        width: 100%;
+        height: 100%;
+        display: table;
+        vertical-align: middle;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        table-layout: fixed;
+
+        .box-inner {
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .content-horiz-two-align {
+            display: table-cell;
+            vertical-align: middle;
+            max-width: 750px;
+
+            @media (max-width: @responsive-width) {
+                float: left;
+            }
+        }
+    }
+
+    @media (max-width: @responsive-width) {
+        & {
+            padding-top: 140px;
+        }
+    }
+
+}
+
+@media (max-width: @responsive-width) {
+    .scale-image {
+        min-width: 200px;
+        width: 100%;
+    }
+}
+
+// required astrerisk for signup
+.form-group.required {
+    .control-label:after {
+        color: #d00;
+        content: "*";
+        margin-left: 2px;
+        top: 7px;
+    }
+}

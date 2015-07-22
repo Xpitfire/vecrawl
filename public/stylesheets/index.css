@@ -1,0 +1,157 @@
+﻿/* required for responsive designe */
+/* LESS - http://lesscss.org style sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=7342u1k006S0Qvr0diM9L0hmL1Pk++pP0GlB0GlB++00HE45kS7pvov4pov4pez++ez++k++nG00nG00nGD27+D27+ */
+/* Feel free to copy&paste color codes to your application */
+/* MIXINS */
+/* Custom colors added */
+/* As hex codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+/* As RGBa codes */
+/* Main Primary color */
+/* Main Secondary color (1) */
+/* Main Secondary color (2) */
+/* Main Complement color */
+.dark-theme {
+  background-color: #010101;
+}
+.page-background {
+  position: fixed;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  /* background: url(/images/bg.jpg) no-repeat bottom center scroll; */
+  background-color: #252528;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .page-background {
+    padding: 300px 0;
+  }
+}
+.index-page-wrapper {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.index-content-wrapper {
+  width: 100%;
+  display: block;
+  height: 200px;
+  position: absolute;
+  top: 145px;
+}
+.index-outer-search-box {
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.index-inner-search-box {
+  width: 100%;
+}
+.index-home-logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 70px;
+}
+.index-search-wrap {
+  width: 50%;
+  width: 600px;
+  border: 0;
+  margin: auto;
+  text-align: left;
+  padding: 4px;
+  vertical-align: middle;
+}
+.index-search-wrap .navbar-form,
+.index-search-wrap .navbar-form .form-group {
+  margin: 0;
+  padding: 0;
+}
+.index-search-wrap form #vecrawl-input-search {
+  height: 40px;
+}
+.index-search-wrap .has-feedback .form-control-feedback {
+  top: 2px;
+}
+@media (max-width: 768px) {
+  .index-search-wrap {
+    width: 100%;
+    min-width: 250px;
+    max-width: 600px;
+    padding: 2px 8px 2px 8px;
+  }
+}
+#index-search-field.affix {
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+}
+.start-bottom {
+  position: absolute;
+  width: 100%;
+  margin-top: 300px;
+}
+.start-icons {
+  width: 335px;
+  margin: 0 auto;
+  -webkit-transition: background-position 0.3s;
+  -moz-transition: background-position 0.3s;
+  -o-transition: background-position 0.3s;
+  transition: background-position 0.3s;
+}
+.start-icons a {
+  color: #f2f2f2;
+  text-decoration: none;
+  float: left;
+  margin: 0 30px 0 30px;
+  text-align: center;
+}
+.start-about {
+  width: 50px;
+  height: 50px;
+  background-image: url(/images/btn_sprite.png);
+  background-position: 0 0;
+  margin: 0 0 5px 0;
+}
+.start-about:hover {
+  background-position: 0 -60px;
+}
+.start-contact {
+  width: 50px;
+  height: 50px;
+  background-image: url(/images/btn_sprite.png);
+  background-position: -60px 0;
+  margin: 0 0 5px 0;
+}
+.start-contact:hover {
+  background-position: -60px -60px;
+}
+.start-support {
+  width: 50px;
+  height: 50px;
+  background-image: url(/images/btn_sprite.png);
+  background-position: -120px 0;
+  margin: 0 0 5px 0;
+}
+.start-support:hover {
+  background-position: -120px -60px;
+}
+.start-icons a:hover {
+  color: #ce3d00;
+}
+.index-info-tag {
+  color: #f7f7f7;
+  font-size: 10px;
+  padding: 20px;
+}
+/*# sourceMappingURL=index.css.map */
